@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <meta charset="UTF8">
+    <style>
+      .flex-container { /*設定該class為方格*/
+      display:grid;
+      grid-template-columns: 35% 65%;
+
+      }
+      .flex-container > div  { /*定義該class下的div*/
+	background:#eee;
+	padding:1em;
+	margin:8px;
+      }
+       .flex-container > div:nth-child(even) { /*是雙數的div也可以改為(odd)*/
+	background:#ddd;
+	padding:1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+	<div>P1 </div>
+	<div>P2 </div>
+	<div>P3 </div>
+	<div>P4 </div>
+    </div>
+  </body>
+</html>
