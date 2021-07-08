@@ -5,14 +5,18 @@
     <meta charset="UTF8">
     <style>
       .flex-container { /*設定該class為方格*/
-      display:grid;
-      grid-template-columns: 35% 35% 30%;
+	display:grid;
+	/*grid-template-columns: 35% 35% 30%;*/
+	/*grid-template-columns: 1fr 2fr 1fr; */
+	grid-template-columns: repeat(3,1fr); /*設定一行擺放3格*/
+	grid-gap:1em;
+	grid-auto-rows:minmax(100px,auto); /*最低高度100px*/
 
       }
       .flex-container > div  { /*定義該class下的div*/
 	background:#eee;
 	padding:1em;
-	margin:8px;
+	/*margin:8px;*/
       }
        .flex-container > div:nth-child(even) { /*是雙數的div也可以改為(odd)*/
 	background:#ddd;
@@ -27,6 +31,9 @@
 	<div>Toriyama's manga was adapted and divided into two anime series produced by Toei Animation: Dragon Ball and Dragon Ball Z, which together were broadcast in Japan from 1986 to 1996. Additionally, the studio has developed 20 animated feature films and three television specials, as well as two anime sequel series titled Dragon Ball GT (1996–1997) and Dragon Ball Super (2015–2018). From 2009 to 2015, a revised version of Dragon Ball Z aired in Japan under the title Dragon Ball Kai, as a recut that follows the manga's story more faithfully by removing most of the material featured exclusively in the anime. Several companies have developed various types of merchandising based on the series leading to a large media franchise that includes films, both animated and live-action, collectible trading card games, numerous action figures, along with several collections of soundtracks and numerous video games. Dragon Ball has become one of the highest-grossing media franchises of all time.
 	</div>
 	<div><img src="go.png" title="Go Pic" alt="Picture" width="300px"></div>
+	<div>Paragraph4</div>
+	<div>Paragraph5</div>
+	<div>Paragraph6</div>
     </div>
   </body>
 </html>
