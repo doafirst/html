@@ -2,28 +2,31 @@
 <html>
   <head>
     <title>Title of the document</title>
+    <meta charset="UTF8">
     <style>
-      .flex-container {
-        display: flex;
-        align-items: center; /* Use another value to see the result */
-        width: 100%;
-        height: 200px;
-        background-color: #1faadb;
+      .flex-container { /*設定該class為方格*/
+      display:grid;
+      grid-template-columns: 35% 35% 30%;
+
       }
-      .flex-container > div {
-        width: 25%;
-        height: 60px;
-        margin: 5px;
-        border-radius: 3px;
-        background-color: #8ebf42;
+      .flex-container > div  { /*定義該class下的div*/
+	background:#eee;
+	padding:1em;
+	margin:8px;
+      }
+       .flex-container > div:nth-child(even) { /*是雙數的div也可以改為(odd)*/
+	background:#ddd;
+	padding:1em;
       }
     </style>
   </head>
   <body>
     <div class="flex-container">
-      <div>fff</div>
-      <div>dddd <img src="go.jpg" title="Go Pic" alt="Picture" width="200px"></div>
-      <div>ttt</div>
+	<div>Dragon Ball (Japanese: ドラゴンボール, Hepburn: Doragon Bōru) is a Japanese media franchise created by Akira Toriyama in 1984. The initial manga, written and illustrated by Toriyama, was serialized in Weekly Shōnen Jump from 1984 to 1995, with the 519 individual chapters collected into 42 tankōbon volumes by its publisher Shueisha. Dragon Ball was originally inspired by the classical 16th-century Chinese novel Journey to the West, combined with elements of Hong Kong martial arts films. The series follows the adventures of protagonist Son Goku from his childhood through adulthood as he trains in martial arts. He spends his childhood far from civilization until he meets a teen girl named Bulma, who encourages him to join her quest in exploring the world in search of the seven orbs known as the Dragon Balls, which summon a wish-granting dragon when gathered. Along his journey, Goku makes several other friends, becomes a family man, discovers his alien heritage, and battles a wide variety of villains, many of whom also seek the Dragon Balls.
+	</div>
+	<div>Toriyama's manga was adapted and divided into two anime series produced by Toei Animation: Dragon Ball and Dragon Ball Z, which together were broadcast in Japan from 1986 to 1996. Additionally, the studio has developed 20 animated feature films and three television specials, as well as two anime sequel series titled Dragon Ball GT (1996–1997) and Dragon Ball Super (2015–2018). From 2009 to 2015, a revised version of Dragon Ball Z aired in Japan under the title Dragon Ball Kai, as a recut that follows the manga's story more faithfully by removing most of the material featured exclusively in the anime. Several companies have developed various types of merchandising based on the series leading to a large media franchise that includes films, both animated and live-action, collectible trading card games, numerous action figures, along with several collections of soundtracks and numerous video games. Dragon Ball has become one of the highest-grossing media franchises of all time.
+	</div>
+	<div><img src="go.png" title="Go Pic" alt="Picture" width="300px"></div>
     </div>
   </body>
 </html>
